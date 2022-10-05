@@ -34,9 +34,11 @@ function FeedbackAdd() {
     }
     if (feedbackEdit.edit === true) {
       updateFeedback(feedbackEdit.item.id, newFeedback)
+      setText('')
     }
     else {
       addFeedback(newFeedback)
+      setText('')
     }
   }
   useEffect(() => {
