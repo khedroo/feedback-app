@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from "uuid"
 
 const FeedbackContext = createContext()
 export const FeedbackProvider = ({children}) => {
-    const jsonUrl = 'http://localhost:5000/feedback?_sort=id&_order=desc'
-    const updateJson = 'http://localhost:5000/feedback'
+    const jsonUrl = '/feedback?_sort=id&_order=desc'
+    const updateJson = '/feedback'
     const [feedback, setFeedback] = useState([])
     const [isLoading, setisLoading] = useState(true)
 
